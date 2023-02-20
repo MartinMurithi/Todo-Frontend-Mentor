@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet"/>
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="index.css" />
+    <title>TOdo App</title>
+  </head>
+  <body>
+    <div class="image"></div>
+  <div class="cont">
+    <div class="container">
+      <div class="header">
+        <h3 class="logo">TODO</h3>
+        <img src="./images/icon-sun.svg" alt="Image of light theme icon" srcset="" class="themeIcon">
+      </div>
+
+       <!-- Input box to create new task  -->
+       
+      <div class="createTask">
+        <input type="checkbox" name="" class="check" />
+        <input
+          type="text"
+          name=""
+          class="newTask"
+          placeholder="Create a new todo.."
+        />
+        <button type="button" class="addTaskBtn">ADD</button>
+      </div>
+      
+
+      <div class="tasks">
+        
+      </div>
+
+      <div class="footer">
+        <div class="tasksCount">
+          <p class="count" id="footerText">5 tasks left</p>
+        </div>
+        <div class="taskStatus">
+          <button type="button" class="all" id="footerText">All</button>
+          <button type="button" class="active" id="footerText">Active</button>
+          <button class="completed" id="footerText">Completed</button>
+        </div>
+        <div class="clear">
+          <button onClick="editBtn(this)" type="button" class="clearAll" id="footerText">Clear Completed</p>
+        </div>
+      </div>
+    </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

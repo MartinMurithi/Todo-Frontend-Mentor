@@ -1,0 +1,160 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-size: 18px;
+  color: white;
+  background-color: hsl(235, 21%, 11%);
+}
+
+.image {
+  background-image: url(./images/bg-desktop-dark.jpg);
+  background-size: cover;
+  height: 30%;
+  width: 100%;
+  display: block;
+  background-repeat: no-repeat;
+}
+
+.cont{
+  display: flex;
+  justify-content: center;
+  margin-top: -150px;
+}
+
+.container {
+  width: 25%;
+  height: 60%;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+  height: 30px;
+  align-items: center;
+}
+
+.logo {
+  font-family: Josefin Sans;
+  letter-spacing: 8px;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-top: 5px;
+}
+
+.themeIcon {
+  cursor: pointer;
+}
+
+.createTask,
+.tasks {
+  display: flex;
+  background-color: hsl(237, 14%, 26%);
+  margin-top: 20px;
+}
+
+.check {
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  
+}
+
+.check:checked{
+  text-decoration: line-through;
+  background-color: aqua;
+}
+
+.newTask {
+  width: 100%;
+  padding: 15px;
+  background-color: hsl(237, 14%, 26%);
+  color: #9c9ba2;
+  border: 5px;
+  outline: transparent;
+}
+
+.addTaskBtn, .editTaskBtn {
+  padding: 5px;
+  border-style: none;
+  cursor: pointer;
+  margin-right: 10px;
+  color: #9c9ba2;
+  background-color: hsl(237, 14%, 26%);
+}
+
+.tasks, .completedTasksDiv {
+  height: auto;
+  padding: 10px;
+  width: 100%;
+  background-color: hsl(237, 14%, 26%);
+  display: block;
+}
+
+.taskItem {
+  width: 100%;
+  height: auto;
+  color: hsl(234, 39%, 85%);
+  border: 5px;
+  outline: transparent;
+}
+
+
+.footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 13px;
+  background-color: hsl(237, 14%, 26%);
+  color: #9c9ba2;
+  padding: 10px;
+}
+
+#footerText {
+  cursor: pointer;
+}
+
+.taskStatus {
+  display: flex;
+}
+
+p,
+.all,
+.active,
+.completed,
+.clear {
+  /* margin-left: 10px;
+  background-color: hsl(237, 14%, 26%); */
+  border-style: none;
+  outline: transparent;
+  color: #9c9ba2;
+  background-color: transparent;
+  margin-left: 6px;
+}
+
+
+.all:hover {
+  color: hsl(236, 33%, 92%);
+}
+
+.clearAll {
+  background-color: transparent;
+  border-style: none;
+  outline: transparent;
+  color: #9c9ba2;
+}
+
+.lightTheme{
+  background-color: aliceblue;
+}
+
+.darkTheme{
+  background-color: hsl(235, 21%, 11%);
+}
